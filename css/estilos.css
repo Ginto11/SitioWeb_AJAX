@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Acme;
+}
+
+body{
+    background-color: #000d;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background-color: cornflowerblue;
+    align-items: center;
+}
+
+
+
+.contenedor__section {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: calc(100vh - 140px);
+    gap: 30px;
+    margin-bottom: 30px;
+
+}
+
+aside{
+    width: 25%;
+}
+
+aside .contenedor__links{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: #fff9;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #000;
+}
+
+
+.contenedor__links a:link{
+    display: flex;
+    gap: 10px;
+    width: 90%;
+    margin: 10px 0;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 1s ease all;
+}
+
+.contenedor__links a:active > .articulo{
+    transform: scale(1);
+}
+
+.contenedor__links a:visited{
+    color: #fff;
+}
+
+.contenedor__links a:hover {
+    color: #f00;
+    background-color: #0009;
+    transform: translateX(20px);
+    width: 80%;
+    margin-right: 20px;
+}
+
+article{
+    width: 70%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #000;
+}
+
+.articulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease-in-out all;
+    overflow-y: scroll;
+}
+
+.articulo::-webkit-scrollbar{
+    width: 7px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.articulo::-webkit-scrollbar-thumb{
+    width: 7px;
+    background-color: #f00;
+    border-radius: 5px;
+}
+
+.contenedor__articulo{
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.contenedor__articulo .parrafos{
+    width: 90%;
+    text-align: justify;
+}
+
+.contenedor__imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contenedor__imagenes div {
+    width: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor__imagenes div img{
+    width: 100%;
+}
+
+.css{
+    width: 88px !important;
+}
+
