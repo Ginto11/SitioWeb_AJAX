@@ -8,6 +8,7 @@
 
 body{
     background-color: #000d;
+    user-select: none;
 }
 
 #root{
@@ -145,3 +146,6 @@ article{
     width: 88px !important;
 }
 
+.contenedor__articulo img {
+    width: 100%;
+}
